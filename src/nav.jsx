@@ -26,11 +26,10 @@ export function NavBar() {
   return (
     <>
       <nav>
-        <header className="flex items-center  justify-around  shadow-md  shadow-gray-100 p-2">
+        <header className="flex items-center  justify-around  shadow-md  shadow-gray-100 p-2 min-[200px]: ">
           <div>
-            <img src={image} alt="page logo" className="w-20" />
+            <img src={image} alt="page logo" className="w-10 lg:w-20" />
           </div>
-          {/* NAV CONTENT */}
           <div>
             <ul className="lg:flex font-bold  min-[220px]:hidden">
               {mapContent}
@@ -49,11 +48,8 @@ export function NavBar() {
           </div>
           {/* drop menu */}
           {boolean && (
-            <div className="absolute  right-20 top-20 bg-white shadow-md w-40 p-5">
+            <div className="absolute  right-10 top-20 bg-white shadow-md w-40 p-5 md:hidden">
               <ul className="w-dropMenuWidth m-auto text-center">
-                {/* <li className="border-b border-borderColor">eskmx</li>
-                <li className="border-b border-borderColor">eskmx</li>
-                <li>eskmx</li> */}
                 {mapDropContent}
               </ul>
             </div>
