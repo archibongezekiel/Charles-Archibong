@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navText {
+  @apply mr-10 cursor-pointer  hover:border-b-2 border-borderColor;
+}
