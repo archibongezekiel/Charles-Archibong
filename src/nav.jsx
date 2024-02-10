@@ -28,19 +28,19 @@ export function NavBar() {
       <nav>
         <header className="flex items-center  justify-around  shadow-md  shadow-gray-100 p-2 min-[200px]: ">
           <div>
-            <img src={image} alt="page logo" className="w-10 lg:w-20" />
+            <img src={image} alt="page logo" className="w-10 md:w-20" />
           </div>
           <div>
-            <ul className="lg:flex font-bold  min-[220px]:hidden">
+            <ul className="  font-extrabold  md:flex   hidden ">
               {mapContent}
             </ul>
           </div>
           {/* nav menu */}
           <div>
-            <span className="lg:hidden md:inline-block" onClick={changeMenu}>
+            <span className="md:hidden  " onClick={changeMenu}>
               <span
                 class="material-symbols-outlined"
-                style={{ fontSize: "45px" }}
+                style={{ fontSize: "30px" }}
               >
                 {menuHidden}
               </span>
@@ -48,7 +48,12 @@ export function NavBar() {
           </div>
           {/* drop menu */}
           {boolean && (
-            <div className="absolute  right-10 top-20 bg-white shadow-md w-40 p-5 md:hidden">
+            <div
+              className="absolute  
+              right-10 top-20 bg-white shadow-md w-40 p-5 
+               md:hidden
+            "
+            >
               <ul className="w-dropMenuWidth m-auto text-center">
                 {mapDropContent}
               </ul>
